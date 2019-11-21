@@ -54,7 +54,7 @@ class TabbarViewController : UITabBarController {
         var arrViews = [UIView]()
         
         for tabbarBtn in tabBar.subviews {
-            if tabbarBtn.isKind(of: NSClassFromString("UITabbarButton")!) {
+            if tabbarBtn.isKind(of: NSClassFromString("UITabBarButton")!) {
                 arrViews.append(tabbarBtn)
             }
         }
