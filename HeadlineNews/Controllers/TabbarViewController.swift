@@ -20,10 +20,10 @@ class TabbarViewController : UITabBarController {
     }
     // 添加vc
     private func addControllers() {
-        addChildControllers(HomeViewController(), title: "首页", image: "tabbar_icon_home", selectImg: "tabbar_icon_home_sel")
-        addChildControllers(WatermelonVideoController(), title: "西瓜视频", image: "tabbar_icon_watermelon", selectImg: "tabbar_icon_watermelon_sel")
-        addChildControllers(MiniVideoController(), title: "小视频", image: "tabbar_icon_minivideo", selectImg: "tabbar_icon_minivideo_sel")
-        addChildControllers(MeViewController(), title: "我的", image: "tabbar_icon_me", selectImg: "tabbar_icon_me_sel")
+        addChildControllers(HomeViewController(), title: "首页", image: "new_home_tabbar", selectImg: "new_home_tabbar_press")
+        addChildControllers(WatermelonVideoController(), title: "西瓜视频", image: "new_video_tabbar", selectImg: "new_video_tabbar_press")
+        addChildControllers(MiniVideoController(), title: "小视频", image: "new_long_video_tabbar", selectImg: "new_long_video_tabbar_press")
+        addChildControllers(MeViewController(), title: "我的", image: "new_mine_tabbar", selectImg: "new_mine_tabbar_press")
     }
     
     // set tabbar
