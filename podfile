@@ -4,6 +4,7 @@ target 'HeadlineNews' do
    
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Masonry'
 
 end  
 

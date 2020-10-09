@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48E4A2F52524957E004B2BFB /* BAAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A2F42524957E004B2BFB /* BAAdView.swift */; };
+		48E4A2F925300B60004B2BFB /* StringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A2F825300B60004B2BFB /* StringTool.swift */; };
 		C52B6866D26044E0F3793118 /* Pods_HeadlineNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BD19F7A30CA3E3DBE6589B /* Pods_HeadlineNews.framework */; };
 		D42A33DB2385798000F60D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42A33DA2385798000F60D72 /* AppDelegate.swift */; };
 		D42A33DD2385798000F60D72 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42A33DC2385798000F60D72 /* HomeViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48E4A2F42524957E004B2BFB /* BAAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAAdView.swift; sourceTree = "<group>"; };
+		48E4A2F825300B60004B2BFB /* StringTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTool.swift; sourceTree = "<group>"; };
 		C7BD19F7A30CA3E3DBE6589B /* Pods_HeadlineNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadlineNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42A33D72385798000F60D72 /* HeadlineNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadlineNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42A33DA2385798000F60D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,70 @@
 				E8FD4F29ECE521FD3E4E424D /* Pods-HeadlineNews.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		48E4A2F62530095C004B2BFB /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				D42A3411238580C700F60D72 /* HttpTool.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		48E4A2F725300965004B2BFB /* String */ = {
+			isa = PBXGroup;
+			children = (
+				48E4A2F825300B60004B2BFB /* StringTool.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		48E4A2FA25300DCD004B2BFB /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D42A34132385873C00F60D72 /* TabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		48E4A2FB25300DD7004B2BFB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D42A33DC2385798000F60D72 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		48E4A2FC25300DE3004B2BFB /* WaterVideo */ = {
+			isa = PBXGroup;
+			children = (
+				D42A3415238588C900F60D72 /* WatermelonVideoController.swift */,
+			);
+			path = WaterVideo;
+			sourceTree = "<group>";
+		};
+		48E4A2FD25300DF7004B2BFB /* MiniVideo */ = {
+			isa = PBXGroup;
+			children = (
+				D42A34172385891F00F60D72 /* MiniVideoController.swift */,
+			);
+			path = MiniVideo;
+			sourceTree = "<group>";
+		};
+		48E4A2FE25300E15004B2BFB /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				D42A34192385892D00F60D72 /* MeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		48E4A2FF25300E36004B2BFB /* AdView */ = {
+			isa = PBXGroup;
+			children = (
+				48E4A2F42524957E004B2BFB /* BAAdView.swift */,
+			);
+			path = AdView;
 			sourceTree = "<group>";
 		};
 		59BF32332F5AAED84A26CAB5 /* Frameworks */ = {
@@ -161,11 +229,11 @@
 		D42A34082385798E00F60D72 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D42A34132385873C00F60D72 /* TabbarViewController.swift */,
-				D42A33DC2385798000F60D72 /* HomeViewController.swift */,
-				D42A3415238588C900F60D72 /* WatermelonVideoController.swift */,
-				D42A34172385891F00F60D72 /* MiniVideoController.swift */,
-				D42A34192385892D00F60D72 /* MeViewController.swift */,
+				48E4A2FA25300DCD004B2BFB /* Tabbar */,
+				48E4A2FB25300DD7004B2BFB /* Home */,
+				48E4A2FC25300DE3004B2BFB /* WaterVideo */,
+				48E4A2FD25300DF7004B2BFB /* MiniVideo */,
+				48E4A2FE25300E15004B2BFB /* Me */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,7 +267,9 @@
 		D42A34102385806700F60D72 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				D42A3411238580C700F60D72 /* HttpTool.swift */,
+				48E4A2FF25300E36004B2BFB /* AdView */,
+				48E4A2F725300965004B2BFB /* String */,
+				48E4A2F62530095C004B2BFB /* Net */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -360,22 +430,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HeadlineNews/Pods-HeadlineNews-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-HeadlineNews/Pods-HeadlineNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-HeadlineNews/Pods-HeadlineNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeadlineNews/Pods-HeadlineNews-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeadlineNews/Pods-HeadlineNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,6 +452,8 @@
 				D42A34182385891F00F60D72 /* MiniVideoController.swift in Sources */,
 				D42A341A2385892D00F60D72 /* MeViewController.swift in Sources */,
 				D42A33DD2385798000F60D72 /* HomeViewController.swift in Sources */,
+				48E4A2F925300B60004B2BFB /* StringTool.swift in Sources */,
+				48E4A2F52524957E004B2BFB /* BAAdView.swift in Sources */,
 				D42A33DB2385798000F60D72 /* AppDelegate.swift in Sources */,
 				D42A34142385873C00F60D72 /* TabbarViewController.swift in Sources */,
 				D42A3412238580C700F60D72 /* HttpTool.swift in Sources */,
